@@ -1,0 +1,51 @@
+{% extends "odp/base.html" %}
+
+{% block content %}
+    <h4 align="center">Registered Groups List</h4>
+
+    <table class="table table-striped table-dark table-bordered table-hover ">
+        <tr>
+            <th>Name</th>
+
+            <th>Description</th>
+            
+            <th>Groups Link</th>
+        </tr>
+        {% for item in groups_list %}
+        <tr>
+            <td>{{ item.name}} &nbsp;&nbsp;<a href="{% url 'create_group' %}?groupid={{item.id}}"><i class="fas fa-edit"></i>Edit</a></td>
+
+            <td>{{ item.description|truncatechars:255}}</td>
+
+            
+            <td><a style="float: left;" href="{% url 'process_list' %}?parentgroup={{item.name}}">
+                View Group
+            </a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <hr />
+    <div style="text-align: center;">
+        {% if page_number > 1 %}
+        <a style="float: left;" href="{% url 'group_list' %}?page={{previous_page}}"
+            class="btn btn-embossed btn-info btn-reduce-on-xs">
+            previous
+        </a>
+        {% endif %}
+
+        <i>Page : {{page_number}} of {{max_pages}}</i>
+        <a style="margin-left:2em" href="{% url 'create_group' %}" class="btn btn-embossed btn-primary btn-reduce-on-xs">
+            Create a  group
+        </a>
+        {% if page_number < max_pages %}
+        
+        
+        <a style="float: right;" href="{% url 'group_list' %}?page={{next_page}}"
+            class="btn btn-embossed btn-primary btn-reduce-on-xs">
+            next
+        </a>
+        {% endif %}
+    </div>
+    
+{% endblock content %}

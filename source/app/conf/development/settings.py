@@ -30,6 +30,12 @@ INSTALLED_APPS = [
     # Application apps
     'main',
     'accounts',
+    'odp',
+    'crispy_forms',
+
+    #tesitng_only
+    'django_extensions'
+
 ]
 
 MIDDLEWARE = [
@@ -63,6 +69,8 @@ TEMPLATES = [
     },
 ]
 
+
+
 WSGI_APPLICATION = 'app.wsgi.application'
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
@@ -70,13 +78,23 @@ EMAIL_FILE_PATH = os.path.join(CONTENT_DIR, 'tmp/emails')
 EMAIL_HOST_USER = 'test@example.com'
 DEFAULT_FROM_EMAIL = 'test@example.com'
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'bhoonidhiodp',
+        'USER': 'databaseuser',
+        'PASSWORD': 'databaseuserpw',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -121,7 +139,7 @@ LANGUAGES = [
 TIME_ZONE = 'UTC'
 USE_TZ = True
 
-STATIC_ROOT = os.path.join(CONTENT_DIR, 'static')
+#   STATIC_ROOT = os.path.join(CONTENT_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(CONTENT_DIR, 'media')
@@ -129,8 +147,15 @@ MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = [
     os.path.join(CONTENT_DIR, 'assets'),
+    os.path.join(CONTENT_DIR, 'static'),
+
 ]
 
 LOCALE_PATHS = [
     os.path.join(CONTENT_DIR, 'locale')
 ]
+
+#//---------------------
+SITE_BRAND_NAME = ' Bhoonidhi ODP'
+CRISPY_TEMPLATE_PACK='bootstrap4'
+#---------------------

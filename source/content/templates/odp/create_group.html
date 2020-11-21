@@ -1,0 +1,20 @@
+{% extends "odp/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h4 align="center">Create a Process Group</h4>
+    {% if form.success %}
+
+        <div class="alert alert-success">
+            <strong>{{ form.success|escape }}</strong>
+        </div>
+            
+
+    {% endif %}
+    <form method="post" action="/odp/creategroup">
+        
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+{% endblock content %}

@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 from main.views import IndexPageView, ChangeLanguageView
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -14,6 +15,8 @@ urlpatterns = [
     path('language/', ChangeLanguageView.as_view(), name='change_language'),
 
     path('accounts/', include('accounts.urls')),
+    path('odp/',include('odp.urls'))
+    #path('forms/',include('app1.urls'))
 ]
 
 if settings.DEBUG:

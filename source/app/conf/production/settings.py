@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     # Application apps
     'main',
     'accounts',
+    'app1'
 ]
 
 MIDDLEWARE = [
