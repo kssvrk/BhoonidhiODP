@@ -1,0 +1,268 @@
+[2020-12-05 13:27:06 +0530] [22643] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:9000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/radhakrishna/projects/django_starter/source
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/radhakrishna/projects/django_starter/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: django_starter
+  default_proc_name: app.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fb2084075e0>
+  on_reload: <function OnReload.on_reload at 0x7fb208407700>
+  when_ready: <function WhenReady.when_ready at 0x7fb208407820>
+  pre_fork: <function Prefork.pre_fork at 0x7fb208407940>
+  post_fork: <function Postfork.post_fork at 0x7fb208407a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fb208407b80>
+  worker_int: <function WorkerInt.worker_int at 0x7fb208407ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fb208407dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7fb208407ee0>
+  pre_request: <function PreRequest.pre_request at 0x7fb208416040>
+  post_request: <function PostRequest.post_request at 0x7fb2084160d0>
+  child_exit: <function ChildExit.child_exit at 0x7fb2084161f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fb208416310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fb208416430>
+  on_exit: <function OnExit.on_exit at 0x7fb208416550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-12-05 13:27:06 +0530] [22643] [INFO] Starting gunicorn 20.0.4
+[2020-12-05 13:27:06 +0530] [22643] [DEBUG] Arbiter booted
+[2020-12-05 13:27:06 +0530] [22643] [INFO] Listening at: http://0.0.0.0:9000 (22643)
+[2020-12-05 13:27:06 +0530] [22643] [INFO] Using worker: sync
+[2020-12-05 13:27:06 +0530] [22646] [INFO] Booting worker with pid: 22646
+[2020-12-05 13:27:06 +0530] [22647] [INFO] Booting worker with pid: 22647
+[2020-12-05 13:27:06 +0530] [22648] [INFO] Booting worker with pid: 22648
+[2020-12-05 13:27:06 +0530] [22643] [DEBUG] 3 workers
+[2020-12-05 07:57:31 +0000] [22648] [DEBUG] GET /
+[2020-12-05 07:57:31 +0000] [22648] [DEBUG] GET /static/css/styles.css
+[2020-12-05 07:57:31 +0000] [22647] [DEBUG] GET /static/vendor/bootstrap/css/bootstrap.min.css
+[2020-12-05 07:57:31 +0000] [22646] [DEBUG] GET /static/vendor/jquery/jquery-3.4.1.min.js
+[2020-12-05 07:57:31 +0000] [22648] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 07:57:31 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 07:57:31 +0000] [22648] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 07:57:32 +0000] [22648] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 07:57:32 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 07:57:32 +0000] [22648] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 07:57:32 +0000] [22646] [DEBUG] GET /static/favicon.ico
+[2020-12-05 07:59:36 +0000] [22648] [DEBUG] GET /
+[2020-12-05 07:59:36 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/css/bootstrap.min.css
+[2020-12-05 07:59:36 +0000] [22647] [DEBUG] GET /static/css/styles.css
+[2020-12-05 07:59:36 +0000] [22647] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 07:59:36 +0000] [22648] [DEBUG] GET /static/vendor/jquery/jquery-3.4.1.min.js
+[2020-12-05 07:59:36 +0000] [22646] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 07:59:36 +0000] [22648] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 08:03:19 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:03:19 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/css/bootstrap.min.css
+[2020-12-05 08:03:19 +0000] [22647] [DEBUG] GET /static/css/styles.css
+[2020-12-05 08:03:19 +0000] [22646] [DEBUG] GET /static/vendor/jquery/jquery-3.4.1.min.js
+[2020-12-05 08:03:19 +0000] [22648] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 08:03:19 +0000] [22646] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 08:03:19 +0000] [22647] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 08:03:19 +0000] [22648] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 08:03:19 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 08:03:19 +0000] [22648] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 08:03:20 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:03:20 +0000] [22648] [DEBUG] GET /static/vendor/bootstrap/css/bootstrap.min.css
+[2020-12-05 08:03:20 +0000] [22647] [DEBUG] GET /static/css/styles.css
+[2020-12-05 08:03:20 +0000] [22646] [DEBUG] GET /static/vendor/jquery/jquery-3.4.1.min.js
+[2020-12-05 08:03:20 +0000] [22647] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 08:03:20 +0000] [22646] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 08:03:20 +0000] [22648] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 08:03:20 +0000] [22647] [DEBUG] GET /static/vendor/popper/popper.min.js
+[2020-12-05 08:03:20 +0000] [22646] [DEBUG] GET /static/vendor/bootstrap/js/bootstrap.min.js
+[2020-12-05 08:03:20 +0000] [22646] [DEBUG] GET /static/js/ie10-viewport-bug-workaround.js
+[2020-12-05 08:03:24 +0000] [22647] [DEBUG] GET /static/favicon.ico
+[2020-12-05 08:05:16 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:05:17 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:05:18 +0000] [22647] [DEBUG] GET /favicon.ico
+[2020-12-05 08:06:52 +0000] [22647] [DEBUG] GET /
+[2020-12-05 08:07:09 +0000] [22648] [DEBUG] GET /
+[2020-12-05 08:07:10 +0000] [22647] [DEBUG] GET /
+[2020-12-05 08:07:11 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:07:11 +0000] [22648] [DEBUG] GET /
+[2020-12-05 08:07:12 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:07:22 +0000] [22646] [DEBUG] GET /admin
+[2020-12-05 08:07:22 +0000] [22648] [DEBUG] GET /admin/
+[2020-12-05 08:07:22 +0000] [22648] [DEBUG] GET /admin/login/
+[2020-12-05 08:07:29 +0000] [22648] [DEBUG] GET /admin/login/
+[2020-12-05 08:09:32 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:10:30 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:10:31 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:10:35 +0000] [22646] [DEBUG] GET /admin/login/
+[2020-12-05 08:10:55 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:11:43 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:11:47 +0000] [22646] [DEBUG] GET /admin/login/
+[2020-12-05 08:11:53 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:06 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:10 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:11 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:11 +0000] [22648] [DEBUG] GET /
+[2020-12-05 08:12:12 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:12 +0000] [22647] [DEBUG] GET /
+[2020-12-05 08:12:13 +0000] [22646] [DEBUG] GET /admin/login/
+[2020-12-05 08:12:14 +0000] [22648] [DEBUG] GET /admin/login/
+[2020-12-05 08:12:42 +0000] [22646] [DEBUG] GET /
+[2020-12-05 08:12:50 +0000] [22647] [DEBUG] GET /admin/login/
+[2020-12-05 08:12:50 +0000] [22647] [DEBUG] GET /favicon.ico
+[2020-12-05 08:12:56 +0000] [22648] [DEBUG] GET /accounts/log-in/
+[2020-12-05 08:13:10 +0000] [22648] [DEBUG] POST /accounts/log-in/
+[2020-12-05 08:13:19 +0000] [22647] [DEBUG] POST /accounts/log-in/
+[2020-12-05 08:13:20 +0000] [22647] [DEBUG] GET /odp/
+[2020-12-05 08:13:22 +0000] [22646] [DEBUG] GET /odp/groups
+[2020-12-05 08:13:22 +0000] [22647] [DEBUG] GET /odp/groups
+[2020-12-05 08:13:22 +0000] [22646] [DEBUG] Ignoring EPIPE
+[2020-12-05 13:45:38 +0530] [22643] [INFO] Handling signal: int
+[2020-12-05 08:15:38 +0000] [22646] [INFO] Worker exiting (pid: 22646)
+[2020-12-05 08:15:38 +0000] [22647] [INFO] Worker exiting (pid: 22647)
+[2020-12-05 08:15:38 +0000] [22648] [INFO] Worker exiting (pid: 22648)
+[2020-12-05 13:45:39 +0530] [22643] [INFO] Shutting down: Master
+[2020-12-05 13:45:43 +0530] [25542] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:9000']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/radhakrishna/projects/django_starter/source
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/radhakrishna/projects/django_starter/logs/gunicorn.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: django_starter
+  default_proc_name: app.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8207fe05e0>
+  on_reload: <function OnReload.on_reload at 0x7f8207fe0700>
+  when_ready: <function WhenReady.when_ready at 0x7f8207fe0820>
+  pre_fork: <function Prefork.pre_fork at 0x7f8207fe0940>
+  post_fork: <function Postfork.post_fork at 0x7f8207fe0a60>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8207fe0b80>
+  worker_int: <function WorkerInt.worker_int at 0x7f8207fe0ca0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8207fe0dc0>
+  pre_exec: <function PreExec.pre_exec at 0x7f8207fe0ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f8207fef040>
+  post_request: <function PostRequest.post_request at 0x7f8207fef0d0>
+  child_exit: <function ChildExit.child_exit at 0x7f8207fef1f0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8207fef310>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8207fef430>
+  on_exit: <function OnExit.on_exit at 0x7f8207fef550>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-12-05 13:45:43 +0530] [25542] [INFO] Starting gunicorn 20.0.4
+[2020-12-05 13:45:43 +0530] [25542] [DEBUG] Arbiter booted
+[2020-12-05 13:45:43 +0530] [25542] [INFO] Listening at: http://0.0.0.0:9000 (25542)
+[2020-12-05 13:45:43 +0530] [25542] [INFO] Using worker: sync
+[2020-12-05 13:45:43 +0530] [25564] [INFO] Booting worker with pid: 25564
+[2020-12-05 13:45:43 +0530] [25565] [INFO] Booting worker with pid: 25565
+[2020-12-05 13:45:43 +0530] [25566] [INFO] Booting worker with pid: 25566
+[2020-12-05 13:45:43 +0530] [25542] [DEBUG] 3 workers
+[2020-12-05 08:15:54 +0000] [25566] [DEBUG] GET /odp/groups

@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'odp',
     'crispy_forms',
 
-    #tesitng_only
+    # tesitng_only
     'django_extensions'
 
 ]
@@ -68,7 +68,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 
 WSGI_APPLICATION = 'app.wsgi.application'
@@ -121,9 +120,11 @@ USE_REMEMBER_ME = True
 RESTORE_PASSWORD_VIA_EMAIL_OR_USERNAME = False
 ENABLE_ACTIVATION_AFTER_EMAIL_CHANGE = True
 
-SIGN_UP_FIELDS = ['username', 'first_name', 'last_name', 'email', 'password1', 'password2']
+SIGN_UP_FIELDS = ['username', 'first_name',
+                  'last_name', 'email', 'password1', 'password2']
 if DISABLE_USERNAME:
-    SIGN_UP_FIELDS = ['first_name', 'last_name', 'email', 'password1', 'password2']
+    SIGN_UP_FIELDS = ['first_name', 'last_name',
+                      'email', 'password1', 'password2']
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
@@ -139,7 +140,7 @@ LANGUAGES = [
 TIME_ZONE = 'UTC'
 USE_TZ = True
 
-#   STATIC_ROOT = os.path.join(CONTENT_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(CONTENT_DIR, 'media')
@@ -155,7 +156,7 @@ LOCALE_PATHS = [
     os.path.join(CONTENT_DIR, 'locale')
 ]
 
-#//---------------------
+# //---------------------
 SITE_BRAND_NAME = ' Bhoonidhi ODP'
-CRISPY_TEMPLATE_PACK='bootstrap4'
-#---------------------
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+# ---------------------
